@@ -1,0 +1,241 @@
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[export]{adjustbox}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+ }
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{kantlipsum, wrapfig,graphicx}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\makeatletter
+\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+   {\csname the#1\endcsname\quad}%       default
+   {\csname #1@cntformat\endcsname}}%    enable individual control
+\newcommand\section@cntformat{}
+\makeatother
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE, HEAD
+%----------------------------------------------------------------------------------------
+\begin{wrapfigure}{r}{120pt}
+\raisebox{0pt}[\dimexpr\height-1\baselineskip\relax]{\includegraphics[width=0.18\textwidth]{/home/ealvarez/cv/Elena.png}}
+\end{wrapfigure}
+
+\par{\raggedleft{\sffamily\huge \hskip 0.6em Elena Alvarez de la Campa Crespo}}\\ % Your name
+\vspace{0pt}
+\begin{spacing}{0.5}
+\par{\raggedleft{\emph{\sffamily\normalsize \hskip 1.2em Place and birth date: 07 July of 1991, Barcelona}}}\\
+\vspace{0pt}
+\par{\raggedleft{\emph{\sffamily\normalsize \hskip 1.2em Address: Carrer Vallès nº2, Cunit 43881 (Tarragona)}}}\\
+\vspace{0pt}
+\par{\raggedleft{\emph{\sffamily\normalsize \hskip 1.2em E-mail: elena.alvarez@vhir.org; elena.alvarezdelacampa@gmail.com.}}}\\
+\par{\raggedleft{\emph{\sffamily\normalsize \hskip 1.2em Mobil phone: +34 636.88.01.06}}}\\
+\end{spacing}
+
+\vspace{0.6cm}
+
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{0.0}
+\section{Work Experience}
+\end{spacing}
+\rule{9.5cm}{0.4pt}
+\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+\begin{spacing}{1.2}
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+\textsc{Feb 2014 -- Pres}	 & \textbf{Vall d'Hebrón Hospital Research }\\
+& \textbf{Institute (VHIR), Barcelona.}\\
+& \textsc{Translational Bioinformatics}\\
+& \textit{Supervisor: Dr. Xavier de la Cruz}\\ \\
+\end{tabular}
+%\end{tabular}
+\normalsize{\emph{PhD Project:} \\-- A machine learning model for improving the annotation of protein sequence variants in sequencing projects.\vspace{0.3cm}}\\
+\normalsize{\emph{Collaborations With Hospital Teams: }}\\
+\normalsize{-- Analysis of exome sequencing experiments in breast cancer patients to identify treatment resistance markers. \\ (Dr. Judit Balañà, VHIO)}\\
+\normalsize{-- Analysis of missense mutations in FOXP3 in families with IPEX syndrome: improving sequence based diagnostic tools. (Dr. Roger Colobràn, VHIR)\vspace{0.3cm}}\\
+
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+\textsc{Feb -- Jul 2013}	 & \textbf{Charité Universitätsmedizin, BCRT.}\\
+& \textbf{Berlin, Germany.}\\
+& \textsc{Transplantation virology, immune }\\
+& \textsc{pathogenicity and cellular immune}\\
+& \textsc{therapy on nephropathy}\\
+& \textit{Supervisor: Dr. Nina Babel, Dr. Petra}\\
+& \textit{Reinke and Dr. Andreas Kurtz.}\\
+\end{tabular}
+%\end{tabular}
+\normalsize{\emph{Project:} \\-- Influence of PolyomavirusBK-infection on renal epithelial cells - a new in vitro model for cellular immunity.}\\ \\
+
+\end{spacing}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\begin{spacing}{0.0}
+\section{Computer Skills}
+\end{spacing}
+\rule{9.5cm}{0.4pt}
+\\
+\begin{itemize}
+\item Advanced Knowledge of \textbf{C}, \textbf{C\#}, \textbf{Python} and  \textbf{Perl} as a scripting languages.
+\item Advanced Scripting skills with \textbf{R}.
+\item Advanced experience with \textbf{Linux environment}.
+\item Knowledge of \textbf{C++}, \textbf{Java}, \textbf{html} and \textbf{Latex}.
+\item Advanced knowledge of \textbf{Next Generation Sequencing Analysis Pipelines} (Bowtie, BWA, GATK, Picard, MuTect, Varscan2, Annovar, SnpEff) and experience with fastaq, bam, vcf etc. 
+\item Advanced Machine Learning skills: \textbf{Neural Networks}, \textbf{Random Forest}, \textbf{Support Vector Machines}, etc. and advanced experience with \textbf{WEKA}.
+\item Knowledge of \textbf{android scripting} and \textbf{Unity3D}.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{0.0}
+\section{Education}
+\end{spacing}
+\rule{8cm}{0.4pt}
+\\
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+\textsc{2014 -- Pres}	 & \textbf{PhD on Bioinformatics}\\
+& \textit{Computer Science/Biomedicine}\\
+& \textit{The University of Barcelona}\\ \\
+
+%------------------------------------------------
+% EDUCATION 2
+%------------------------------------------------
+
+2013 -- 2014 & \textbf{Master of Genetics and}\\
+& \textbf{Genomics}\\ 
+& \small Mark: 9.1/10 \\
+& \textsc{Faculty of Biology} \\ 
+& \textit{The University of Barcelona}\\
+&\\
+	 
+%------------------------------------------------
+% EDUCATION 3
+%------------------------------------------------
+
+2013 -- 2014 & \textbf{Degree of Mathematics} \\ 
+& \small Mark: 8.0/10 (Not Finished) \\
+& \textsc{Faculty of Mathematics} \\ 
+& \textit{The University of Barcelona}\\
+&\\
+	 
+%------------------------------------------------
+% EDUCATION 4
+%------------------------------------------------
+
+2009 -- 2013 & \textbf{Degree of Biotechnology} \\ 
+& \small Mark: 7.1/10 \\
+& \textsc{Faculty of Biology} \\ 
+& \textit{The University of Barcelona}\\
+&\\
+	
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[5pt]
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{0.0}
+\section{Languages}
+\end{spacing}
+\rule{8cm}{0.4pt}
+\\
+
+\begin{tabular}{rl}
+\textbf{English}	 & \textbf{Fluent}\\
+& \textit{C2. Upper-Advanced English Course,}\\
+& \textit{Merit School. (Sept 2012- Jan 2013)}\\ \\
+
+\textbf{Spanish}	 & \textbf{Mothertongue}\\ \\
+
+\textbf{Catalan}	 & \textbf{Mothertongue}\\ \\
+
+\textbf{French}	 & \textbf{Basic Knowledge}\\
+& \textit{2003-2006 during High-School}\\ \\
+
+\textbf{German}	 & \textbf{Basic Knowledge}\\
+& \textit{A2. Deutsch Course, DeutschAkademie,}\\
+& \textit{Berlin-Alexanderplatz. (April 2013)}\\ \\
+
+%------------------------------------------------
+
+\end{tabular}\\[5pt]
+
+%----------------------------------------------------------------------------------------
+%	CAPACITIES AND PERSONAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{0.0}
+\section{Capacities And Personal Skills}
+\end{spacing}
+\rule{8cm}{0.4pt}
+\\
+
+\begin{itemize}
+\item Teamwork aware: experience in laboratories, university seminars, journal clubs, group meetings. 
+\item Easy adaptation to multicultural atmospheres, stays and trips abroad. 
+\item Good communication abilities, good socializing skills.
+\item Organizational and planning abilities.
+\item Highly-motivated, energetic and enthusiastic about learning new skills or enhancing existing ones.
+\end{itemize}
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
